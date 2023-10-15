@@ -22,7 +22,7 @@ for dict in birthday_data:
                 connection.login(user=MY_EMAIL, password=MY_PASSWORD)
                 connection.sendmail(
                     from_addr=MY_EMAIL,
-                    to_addrs=MY_EMAIL,
+                    to_addrs=dict["email"],
                     msg= f"La multi ani!\n\n{lines}"
                 )
 
